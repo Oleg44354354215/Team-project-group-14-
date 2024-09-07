@@ -1,19 +1,85 @@
 <header class="header">
   <div class="container">
     <nav class="nav">
-      <a class="nav-logo" href="./index.html" aria-label="Site logo">
-        <svg class="nav-logo-icon" width="100" height="30">
-          <use href="{=$icon-path}"></use>
-        </svg>
-      </a>
+      <a class="nav-logo" href="./index.html">watchcharm</a>
       <ul class="nav-list">
         <li class="nav-item">
-          <a class="nav-link {=$highlight-act}" href="./page-2.html">Page 2</a>
+          <a class="nav-link" href="./index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link {=$highlight-curr}" href="./page-3.html">Page 3</a>
+          <a class="nav-link" href="./hero.html">About Us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Catalog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Sale</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Reviews</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="">Contact Us</a>
         </li>
       </ul>
+      <div class="container-benefits">
+        <a href="https://www.facebook.com/goITclub/" target="_blank">
+          <svg class="benefits-item-icon" width="36" height="36">
+            <use href="./src/img/sprite.svg#logo"></use>
+          </svg>
+        </a>
+        <a href="https://www.instagram.com/goitclub/" target="_blank">
+          <svg class="benefits-item-icon" width="36" height="36">
+            <use href="./src/img/sprite.svg#icon-instagram"></use>
+          </svg>
+        </a>
+        <a href="https://www.youtube.com/c/GoIT" target="_blank">
+          <svg class="benefits-item-icon" width="36" height="36">
+            <use href="./src/img/sprite.svg#icon-youtube"></use>
+          </svg>
+        </a>
+      </div>
     </nav>
+      <button type="button" class="menu-open"></button>
+        <svg width="40" height="40">
+          <use href="./src/img/sprite.svg#icon-menu"></use>
+        </svg>
+      </button>
+  </div>
+  <div class="menu-modal is-open">
+    <div>
+      <button class="menu-close">
+        <svg width="40" height="40">
+          <use href="./src/img/sprite.svg#icon-x"></use>
+        </svg>
+      </button>
+      <nav class="mob-nav-menu"></nav>
+            <ul class="mob-nav-list">
+              <li><a class="menu-nav-link">Home</a></li>
+              <li><a class="menu-nav-link">About Us</a></li>
+              <li><a class="menu-nav-link">Catalog</a></li>
+              <li><a class="menu-nav-link">Sale</a></li>
+              <li><a class="menu-nav-link">Reviews</a></li>
+              <li><a class="menu-nav-link">Contact Us</a></li>
+            </ul>
+          </nav>
+    </div>
+    <div class="menu-container-benefits">
+      <a href="https://www.facebook.com/goITclub/" target="_blank">
+        <svg class="menu-benefits-item-icon" width="36" height="36">
+          <use href="./src/img/sprite.svg#logo"></use>
+        </svg>
+      </a>
+      <a href="https://www.instagram.com/goitclub/" target="_blank">
+        <svg class="menu-benefits-item-icon" width="36" height="36">
+          <use href="./src/img/sprite.svg#icon-instagram"></use>
+        </svg>
+      </a>
+      <a href="https://www.youtube.com/c/GoIT" target="_blank">
+        <svg class="menu-benefits-item-icon" width="36" height="36">
+          <use href="./src/img/sprite.svg#icon-youtube"></use>
+        </svg>
+      </a>
+    </div>
   </div>
 </header>

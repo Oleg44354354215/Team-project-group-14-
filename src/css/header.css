@@ -9,12 +9,17 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  line-height: 24.26px;
+  font-weight: 500;
+  font-size: 20px;
+  letter-spacing: -2%;
 }
 .nav-list {
-  display: flex;
+  /* display: flex; */
   align-items: center;
   justify-content: flex-end;
   gap: 40px;
+  display: none; 
 }
 .nav-link {
   position: relative;
@@ -22,23 +27,117 @@
   font-weight: 500;
   letter-spacing: 0.02em;
   transition: 200ms ease-in;
+  line-height: 18px;
+  font-size: 14px;
 }
-.nav-link:hover,
-.nav-link:focus {
-  color: #747bff;
-}
-.nav-link::after {
+
+.nav-link::before,
+.menu-nav-link::before {
   content: '';
   position: absolute;
-  bottom: 0;
+  bottom: -14px;
   left: 50%;
-  transform: translateX(-50%) translateY(100%);
-  width: 110%;
-  height: 4px;
-  border-radius: 4px;
-  transform-origin: center;
-  animation: stretch 400ms cubic-bezier(0.68, -0.55, 0.27, 1.55) 200ms both;
+  transform: translateX(-50%);
+  width: 8px;
+  height: 8px;
+  background-color: transparent;
+  border-radius: 50%;
+  transition: background-color 0.35s;
 }
-.nav-link.active::after {
-  background: #747bff;
+
+.nav-link:hover::before,
+.menu-nav-link:hover::before,
+.nav-link:focus::before,
+.menu-nav-link:focus::before {
+  background-color: rgba(51, 80, 233, 1);
+}
+
+.benefits-item-icon  {
+  border: 1px solid rgba(12, 12, 12, 0.1);
+  padding: 8px;
+  gap: 8px;
+  border-radius: 10px;
+  fill: rgba(12, 12, 12, 1);
+  display:none;
+}
+
+.menu-nav-link {
+  display: block;
+  position: relative;
+  font-weight: 500;
+  letter-spacing: 0.02em;
+  transition: 200ms ease-in;
+  line-height: 18px;
+  font-size: 14px;
+  color: rgba(251, 251, 251, 1);
+  text-align: center;
+  justify-content: center;
+  font-family: Gilroy;
+}
+
+.mob-nav-list :not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.menu-open {
+  border-color: black;
+  background: none;
+  justify-content: end;
+  align-items: end;
+}
+
+.menu-modal.is-open {
+  width: 200px;
+  height: 100%;
+  background-image: url(../img/section-header/mobilbg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 640px ;
+  top: 0; 
+  right: 0;
+}
+
+.menu-close {
+  border: 1px solid rgba(46, 47, 66, 1);
+  background-color: rgba(231, 233, 252, 1);
+  opacity: 50%;
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-bottom: 24px;
+}
+
+/* Styles for Tablet devices */
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .menu-modal.is-open {
+    width:330px;
+  }
+}
+/* Styles for Desktop devices */
+@media only screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+  }
+  .nav-list {
+  display: flex;
+  }
+  .benefits-item-icon {
+    display:inherit ;
+  }
+  .menu-open {
+    display: none;
+  }
+  .menu-modal.is-open {
+    display: none;
+  } 
 }
