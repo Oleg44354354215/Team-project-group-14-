@@ -1,0 +1,79 @@
+/* Основні стилі */
+.about-us {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  gap: 20px;
+}
+
+.about-us h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.about-us p {
+  margin: 10px 0;
+}
+
+.view-catalog {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.view-catalog:hover {
+  background-color: #0056b3;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+}
+
+.responsive-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 10px;
+}
+
+/* Адаптивність для мобільних та планшетів */
+@media (min-width: 375px) {
+  .about-us {
+    padding: 20px;
+  }
+}
+
+@media (min-width: 768px) {
+  .about-us {
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+/* Стилі для десктопу */
+@media (min-width: 1280px) {
+  .about-us {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .content {
+    flex: 1;
+  }
+
+  .image-container {
+    flex: 1;
+    justify-content: flex-end;
+  }
+}
+
+/* Оптимізація для Retina-екранів */
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .responsive-image {
+    content: url('watch@2x.jpg');
+  }
+}
