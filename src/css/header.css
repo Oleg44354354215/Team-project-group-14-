@@ -1,6 +1,7 @@
 
 .header {
-  padding: 20px 0;
+  position: relative;
+  padding: 20px 20px;
 }
 .nav {
   display: flex;
@@ -14,6 +15,7 @@
   font-weight: 500;
   font-size: 20px;
   letter-spacing: -2%;
+  color: rgba(12, 12, 12, 1);
 }
 .nav-list {
   /* display: flex; */
@@ -30,6 +32,7 @@
   transition: 200ms ease-in;
   line-height: 18px;
   font-size: 14px;
+  color:rgba(12, 12, 12, 1);
 }
 
 .nav-link::before,
@@ -58,7 +61,7 @@
   padding: 8px;
   gap: 8px;
   border-radius: 10px;
-  fill: rgba(12, 12, 12, 1);
+  fill: #0C0C0C;
   display:none;
 }
 
@@ -80,11 +83,30 @@
   margin-bottom: 40px;
 }
 
+.mob-nav-list{
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(12, 12, 12, 0.1); /* Колір смужки */
+}
+
 .menu-open {
   border-color: black;
   background: none;
-  justify-content: end;
-  align-items: end;
+  display: block;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 1000;
 }
 
 .menu-modal.is-open {
@@ -98,21 +120,40 @@
   z-index: 999;
   top: 0;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   min-height: 640px ;
   top: 0; 
   right: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .menu-close {
-  border: 1px solid rgba(46, 47, 66, 1);
-  background-color: rgba(231, 233, 252, 1);
+  border: none;
   opacity: 50%;
-  border-radius: 50%;
   display: block;
-  margin-left: auto;
-  margin-bottom: 24px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+
+.menu-benefits-item-icon {
+  fill: rgba(251, 251, 251, 1);
+  border: 1px solid rgba(251, 251, 251, 0.1);
+  border-radius: 10px;
+  }
+.menu-container-benefits {
+  display: flex;
+  justify-content: center;
+  gap: 20px; 
+  display: block;
+  position: absolute;
+  bottom: 20px;
+  cursor: pointer;
+  z-index: 1000;
 }
 
 /* Styles for Tablet devices */
@@ -122,6 +163,9 @@
   }
   .menu-modal.is-open {
     width:330px;
+  }
+  .header {
+    padding: 26px 32px;
   }
 }
 /* Styles for Desktop devices */
@@ -141,4 +185,7 @@
   .menu-modal.is-open {
     display: none;
   } 
+  .header {
+    padding: 30px 64px;
+  }
 }
