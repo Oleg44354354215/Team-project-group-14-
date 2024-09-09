@@ -1,5 +1,4 @@
-/* Основні стилі */
-.about-us {
+Основні стилі .about-us {
   display: flex;
   flex-direction: column;
   padding: 20px;
@@ -18,10 +17,19 @@
 .view-catalog {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border-radius: 8px;
+  background-color: #3350e9;
+  border-radius: 16px;
   text-decoration: none;
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 129%;
+  text-align: center;
+  color: #fbfbfb;
+  font-family: 'Gilroy', sans-serif;
+  width: 160px;
+  height: 48px;
+  padding: 15px 38px;
 }
 
 .view-catalog:hover {
@@ -43,6 +51,7 @@
 @media (min-width: 375px) {
   .about-us {
     padding: 20px;
+    height: 912px;
   }
 }
 
@@ -63,17 +72,35 @@
 
   .content {
     flex: 1;
+    padding: 0px 20px;
+    width: 335px;
+    height: 446px;
   }
 
   .image-container {
     flex: 1;
     justify-content: flex-end;
+    border-radius: 30px;
+    width: 335px;
+    height: 446px;
+
+    background: rgba(12, 12, 12, 0.2), url('path_to_image');
+  }
+
+  /* Оптимізація для Retina-екранів */
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+    .responsive-image {
+      content: url('watch@2x.jpg');
+    }
   }
 }
-
-/* Оптимізація для Retina-екранів */
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .responsive-image {
-    content: url('watch@2x.jpg');
-  }
+.about-us .text-1 {
+  margin-bottom: 20px;
+}
+.about-us .text-2 {
+  margin-bottom: 20px;
+}
+.about-us .h2 {
+  margin-top: 40px;
+  margin-bottom: 28px;
 }

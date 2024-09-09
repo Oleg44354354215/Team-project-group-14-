@@ -1,13 +1,13 @@
 <section class="about-us">
   <div class="content">
-    <h2>About Us</h2>
-    <p>
+    <h2 class="h2">About Us</h2>
+    <p class="text-1">
       Welcome to our premium watch collection, where luxury and style meet
       functionality and precision. Our selection of timepieces embodies the very
       best in Swiss craftsmanship and engineering, ensuring that you'll always
       have a reliable and stylish accessory on your wrist.
     </p>
-    <p>
+    <p class="text-2">
       At our premium watch collection, we believe that a watch is more than just
       a timekeeping device – it's a statement piece that reflects your
       personality and style. So why settle for anything less than the best?
@@ -15,10 +15,40 @@
     <a href="#catalog" class="view-catalog">View catalog</a>
   </div>
   <div class="image-container">
-    <img
-      srcset="watch@1x.jpg 1x, watch@2x.jpg 2x"
+    <!-- <img
+      src="./src/img/section-about-us/Rectangle1.jpg"
       alt="Watch"
       class="responsive-image"
-    />
+    /> -->
+    <picture
+      ><source
+        srcset="
+          ./src/img/section-about-us/Rectangle1.jpg 1x,
+          ./src/img/section-about-us/Rectangle1.jpg 2x
+        "
+        media="(min-width:1280px)"
+      />
+      <source
+        srcset="
+          ./src/img/section-about-us/Rectangle1.jpg 1x,
+          ./src/img/section-about-us/Rectangle1.jpg 2x
+        "
+        media="(min-width: 768px)"
+      />
+      <source
+        media="(max-width: 767px)"
+        srcset="
+          ./src/img/section-about-us/image.jpg      1x,
+          ./src/img/section-about-us/Rectangle1.jpg 2x
+        "
+      />
+      <img
+        src="./src/img/section-about-us/image.jpg"
+        alt="watches"
+        width="1150"
+        height="500"
+        class="hero-image"
+      />
+    </picture>
   </div>
 </section>
