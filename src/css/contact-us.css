@@ -206,8 +206,8 @@
 @media screen and (min-width: 1280px) {
   .container {
     max-width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
+    padding-left: 65px;
+    padding-right: 65px;
   }
   .container-form-watch {
     max-width: 100%;
