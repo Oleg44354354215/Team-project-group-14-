@@ -36,9 +36,7 @@ ul {
 
 @media screen and (min-width: 1280px) {
   .container {
-    max-width: 1158px;
-    padding-left: 15px;
-    padding-right: 15px;
+    max-width: 1216px;
   }
 }
 
@@ -92,6 +90,12 @@ ul {
   opacity: 1;
 }
 
+.social-link{
+  display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .footer-social .social-link{
   border: 1px solid rgba(251, 251, 251, 0.1);
   border-radius: 10px;
@@ -125,16 +129,19 @@ ul {
 }
 
 .navigation{
+  max-width: 147px;
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.navigation .navigation-item{
   font-family: "Gilroy", sans-serif;
   font-weight: 500;
   font-size: 12px;
   line-height: 133%;
   text-align: center;
   color: #fbfbfb;
-  max-width: 147px;
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
 }
 
 .text-pioneer{
@@ -143,27 +150,29 @@ ul {
   font-size: 12px;
   line-height: 133%;
   color: #fbfbfb;
-  /* text-align: right; */
   max-width: 83px;
 }
 
 .last-link{
-  font-family: "Gilroy", sans-serif;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 129%;
-  letter-spacing: -0.02em;
-  color: rgba(251, 251, 251, 0.5);
   display: flex;
   gap: 20px;
   margin-top: 8px;
 }
 
+.last-link .last-link-item{
+  font-family: "Gilroy", sans-serif;
+  font-weight: 500;
+  font-size: 10px;
+  line-height: 140%;
+  letter-spacing: -0.02em;
+  color: rgba(251, 251, 251, 0.5);
+}
+
 .text-watch{
   font-family: "Gilroy", sans-serif;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 129%;
+  font-size: 10px;
+  line-height: 140%;
   letter-spacing: -0.02em;
   color: rgba(251, 251, 251, 0.5);
 }
@@ -172,8 +181,7 @@ ul {
   border-top: 1px solid rgba(251, 251, 251, 0.1);
   padding-top: 24px;
 }
-
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) and (max-width: 1279px) {
   .footer-top{
     display: flex;
     flex-wrap: wrap;
@@ -181,19 +189,91 @@ ul {
     justify-content: space-between;
   }
 
+  .footer .logo{
+    font-size: 20px;
+}
+
+  .footer-social .social-link{
+    width: 36px;
+    height: 36px;
+  }
+
+  .footer-box{
+    margin-top: 0;
+  }
+
   .slogon{
     max-width: 524px;
     font-size: 28px;
     line-height: 114%;
+    margin-bottom: 100px;
+    margin-top: 86px;
+  }
+
+  .text-pioneer{
+    max-width: 162px;
+    font-size: 14px;
+    line-height: 129%;
+  }
+
+  .navigation{
+    max-width: 400px;
+  }
+
+  .navigation .navigation-item{
+    font-size: 14px;
+    line-height: 129%;
+  }
+
+  .text-watch{
+    font-size: 14px;
+    line-height: 129%;
+  }
+
+  .last-link .last-link-item{
+    font-size: 14px;
+    line-height: 129%;
+  }
+
+  .last-link{
+    margin: 0;
+  }
+
+  .footer-bot{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer-tell{
+    font-size: 14px;
+    line-height: 129%;
+  }
+
+  .call-me{
+    margin-top: 15px;
   }
 }
 
 @media screen and (min-width: 1280px) {
   .slogon{
-    max-width: 523px;
+    max-width: 524px;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 114%;
+    position: absolute;
+    margin-left: 308px;
+    margin-top: 0;
+  }
+
+  .footer-top{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .footer .logo {
+    margin-right: 848px;
     font-size: 20px;
   } 
 
@@ -202,8 +282,55 @@ ul {
     height: 36px;
   }
 
+    .footer-tell{
+    font-size: 14px;
+    line-height: 129%;
+  }
+
+    .call-me{
+    margin-top: 15px;
+  }
+
   .last-link{
     text-align: right;
   }
     
+  .text-pioneer{
+    text-align: right;
+  }
+
+  .navigation .navigation-item{
+    font-size: 14px;
+    line-height: 129%;
+  }
+  
+  .navigation {
+    max-width: 505px;
+    gap: 40px;
+  }
+
+      .text-pioneer{
+    max-width: 162px;
+    font-size: 14px;
+    line-height: 129%;
+  }
+
+    .text-watch{
+    font-size: 14px;
+    line-height: 129%;
+  }
+
+    .last-link .last-link-item{
+    font-size: 14px;
+    line-height: 129%;
+  }
+ 
+  .last-link{
+    margin: 0;
+  }
+
+  .footer-bot{
+    display: flex;
+    justify-content: space-between;
+  }
 }
