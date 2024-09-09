@@ -1,0 +1,126 @@
+.section-catalog {
+  margin-bottom: 60px;
+}
+.catalog-title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
+  margin-bottom: 24px;
+  margin-left: 20px;
+}
+.catalog-list {
+  display: flex;
+  gap: 20px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.catalog-item {
+  border: 1px solid rgba(12, 12, 12, 0.05);
+  border-radius: 30px;
+  width: 335px;
+  height: 364px;
+  background-color: #f3f3f3;
+}
+.catalog-photo {
+  display: block;
+}
+.catalog-item-title {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.25;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
+  margin-bottom: 8px;
+}
+
+.catalog-item-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: rgba(12, 12, 12, 0.5);
+}
+.mob {
+  display: none;
+}
+.catalog-btn {
+  min-width: 160px;
+  height: 48px;
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.29;
+  text-align: center;
+  color: #fbfbfb;
+  border-radius: 16px;
+  background-color: #3350e9;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  border: none;
+  padding: 15px 44px;
+}
+.catalog-btn:hover,
+.catalog-btn:focus {
+  background-color: #1f3cd4;
+}
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+  .section-catalog {
+    margin-bottom: 80px;
+  }
+  .catalog-title {
+    font-size: 48px;
+    line-height: 0.92;
+    margin-bottom: 40px;
+  }
+  .catalog-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px 16px;
+  }
+  .catalog-item {
+    width: calc((100% - 16px) / 2);
+    height: auto;
+    padding: 24px 32px;
+  }
+  .mob {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 32px 16px;
+    align-items: center;
+    justify-content: center;
+  }
+  .catalog-item-title {
+    font-size: 20px;
+    line-height: 1;
+  }
+
+  .catalog-btn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+  .section-catalog {
+    margin-bottom: 100px;
+  }
+  . .catalog-list {
+    gap: 32px 23px;
+  }
+  .catalog-item {
+    width: calc((100% - 46px) / 3);
+  }
+}
