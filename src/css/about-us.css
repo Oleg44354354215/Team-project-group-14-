@@ -7,11 +7,9 @@
 
 .about-us h2 {
   font-size: 24px;
-  margin-bottom: 10px;
 }
 
 .about-us p {
-  margin: 10px 0;
 }
 
 .view-catalog {
@@ -30,6 +28,8 @@
   width: 160px;
   height: 48px;
   padding: 15px 38px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .view-catalog:hover {
@@ -47,7 +47,6 @@
   border-radius: 10px;
 }
 
-/* Адаптивність для мобільних та планшетів */
 @media (min-width: 375px) {
   .about-us {
     padding: 20px;
@@ -58,50 +57,78 @@
 @media (min-width: 768px) {
   .about-us {
     flex-direction: column;
-    gap: 30px;
+    gap: 40px;
+  }
+  .responsive-image {
+    width: 100%;
+    max-width: 704px;
+  }
+  .content {
+    margin-top: 80px;
+    margin-left: 60px;
+    margin-right: 60px;
+    margin-bottom: 20px;
+  }
+  .h2 {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 600;
+    font-size: 800px;
+    line-height: 92%;
+    letter-spacing: -0.02em;
+    color: #0c0c0c;
   }
 }
 
-/* Стилі для десктопу */
 @media (min-width: 1280px) {
   .about-us {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-  }
-
-  .content {
-    flex: 1;
-    padding: 0px 20px;
-    width: 335px;
-    height: 446px;
-    margin-left: 20px;
-  }
-
-  .image-container {
-    flex: 1;
-    justify-content: flex-end;
-    border-radius: 30px;
-    width: 335px;
-    height: 446px;
-
-    background: rgba(12, 12, 12, 0.2), url('path_to_image');
-  }
-
-  /* Оптимізація для Retina-екранів */
-  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-    .responsive-image {
-      content: url('watch@2x.jpg');
+    gap: 40px;
+    padding: 0px 32px;
+    .h2 {
+      font-family: 'Gilroy', sans-serif;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 92%;
+      letter-spacing: -0.02em;
+      color: #0c0c0c;
     }
   }
 }
+
 .about-us .text-1 {
-  margin-bottom: 20px;
 }
 .about-us .text-2 {
-  margin-bottom: 40px;
 }
 .about-us .h2 {
+  color: black;
+}
+
+.content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.image-container {
+  flex: 1;
+  border-radius: 30px;
+  background: rgba(12, 12, 12, 0.2), url('path_to_image');
+  margin-bottom: 20px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .responsive-image {
+    content: url('watch@2x.jpg');
+  }
+}
+
+.about-us .content {
+  flex: 1;
+  padding: 0px 20px;
+  margin-bottom: 20px;
   margin-top: 40px;
-  margin-bottom: 28px;
 }
