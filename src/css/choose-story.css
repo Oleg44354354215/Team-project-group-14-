@@ -1,0 +1,143 @@
+.your-story {
+  background-repeat: no-repeat;
+  background-image: linear-gradient(
+      rgba(12, 12, 12, 0.8),
+      rgba(12, 12, 12, 0.8)
+    ),
+    url(../img/section-choose-your-story/image-one-x.jpg);
+  background-color: #0c0c0c;
+  border-radius: 30px;
+  max-width: 335px;
+  margin: 0 auto;
+  padding: 60px 28px;
+}
+@media screen and (-webkit-min-device-pixel-ratio: 2),
+  (min-resolution: 2dppx),
+  (min-resolution: 192dpi) {
+  .your-story {
+    background-image: linear-gradient(
+        rgba(12, 12, 12, 0.8),
+        rgba(12, 12, 12, 0.8)
+      ),
+      url(../img/section-choose-your-story/image-two-x.jpg);
+  }
+}
+.text-choose-story {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1;
+  letter-spacing: -0.02em;
+  color: #fbfbfb;
+  max-width: 279px;
+  margin: 0;
+  margin-bottom: 28px;
+}
+.container {
+  padding: 60px 20px;
+  min-width: 320px;
+  max-width: 375px;
+  margin: 0 auto;
+}
+.btn {
+  display: block;
+  /* margin-left: auto; */
+  min-width: 160px;
+  align-items: center;
+  justify-content: center;
+  height: 48px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.28;
+  color: #fbfbfb;
+  background-color: transparent;
+  border: 1px solid rgba(251, 251, 251, 0.15);
+  border-radius: 16px;
+}
+
+.btn:hover,
+.btn:focus {
+  background-color: white;
+  color: black;
+}
+.your-story-span {
+  color: rgba(251, 251, 251, 0.5);
+}
+@media screen and (min-width: 768px) {
+  .container {
+    min-width: 768px;
+    padding: 80px 32px;
+  }
+  .your-story {
+    padding: 80px 64px;
+    max-width: 704px;
+    background-image: linear-gradient(
+        rgba(12, 12, 12, 0.8),
+        rgba(12, 12, 12, 0.8)
+      ),
+      url(../img/section-choose-your-story/image-tab-one-x.jpg);
+    background-size: cover;
+
+    max-width: 704px;
+  }
+
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .your-story {
+      background-image: linear-gradient(
+          rgba(12, 12, 12, 0.8),
+          rgba(12, 12, 12, 0.8)
+        ),
+        url(../img/section-choose-your-story/image-tab-two-x.jpg);
+    }
+  }
+
+  .text-choose-story {
+    margin-bottom: 32px;
+    max-width: 576px;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 0.91;
+    color: #fbfbfb;
+  }
+  .btn {
+    margin-left: 0 auto;
+  }
+}
+@media screen and (min-width: 1280px) {
+  .container {
+    padding: 100px 65px;
+    min-width: 1280px;
+    display: flex;
+  }
+  .your-story {
+    padding: 80px;
+    padding-bottom: 83px;
+    display: flex;
+    min-width: 1150px;
+    background-image: linear-gradient(
+        rgba(12, 12, 12, 0.8),
+        rgba(12, 12, 12, 0.8)
+      ),
+      url(../img/section-choose-your-story/image-desc-one-x.jpg);
+  }
+  @media screen and (-webkit-min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    .your-story {
+      background-image: linear-gradient(
+          rgba(12, 12, 12, 0.8),
+          rgba(12, 12, 12, 0.8)
+        ),
+        url(../img/section-choose-your-story/image-desc-two-x.jpg);
+    }
+  }
+  .text-choose-story {
+    max-width: 690px;
+    margin-bottom: 0;
+  }
+  .btn {
+    display: block;
+    margin-left: auto;
+  }
+}
