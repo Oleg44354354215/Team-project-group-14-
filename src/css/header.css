@@ -1,7 +1,7 @@
-
-.header {
-  position: relative;
+.container {
+  max-width: 335px;
   padding: 20px 20px;
+  position: relative;
 }
 .nav {
   display: flex;
@@ -107,7 +107,7 @@
   margin-bottom: auto;
 }
 
-.header::after {
+.container::after{
   content: '';
   position: absolute;
   bottom: 0;
@@ -115,6 +115,7 @@
   width: 100%;
   height: 1px;
   background-color: rgba(12, 12, 12, 0.1);
+  padding: 0;
 }
 
 .menu-open {
@@ -200,12 +201,10 @@
 @media only screen and (min-width: 768px) {
   .container {
     max-width: 768px;
+    padding: 26px 32px;
   }
   .menu-modal.is-open {
     width:330px;
-  }
-  .header {
-    padding: 26px 32px;
   }
   .menu-open{
     right: 40px;
@@ -216,6 +215,7 @@
 @media only screen and (min-width: 1200px) {
   .container {
     max-width: 1200px;
+    padding: 30px 64px;
   }
   .nav-list {
   display: flex;
@@ -229,9 +229,6 @@
   .menu-modal.is-open {
     display: none;
   } 
-  .header {
-    padding: 30px 64px;
-  }
   .container-benefits{
     display: flex;
   }
