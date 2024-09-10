@@ -5,11 +5,13 @@
   gap: 20px;
 }
 
-.about-us h2 {
-  font-size: 24px;
-}
-
-.about-us p {
+.h2 {
+  font-family: 'Gilroy', sans-serif;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: -0.02em;
+  color: #0c0c0c;
 }
 
 .view-catalog {
@@ -78,7 +80,7 @@
   .h2 {
     font-family: 'Gilroy', sans-serif;
     font-weight: 600;
-    font-size: 800px;
+    font-size: 48px;
     line-height: 92%;
     letter-spacing: -0.02em;
     color: #0c0c0c;
@@ -92,23 +94,15 @@
     align-items: center;
     gap: 40px;
     padding: 0px 32px;
-    .h2 {
-      font-family: 'Gilroy', sans-serif;
-      font-weight: 600;
-      font-size: 48px;
-      line-height: 92%;
-      letter-spacing: -0.02em;
-      color: #0c0c0c;
-    }
   }
-}
-
-.about-us .text-1 {
-}
-.about-us .text-2 {
-}
-.about-us .h2 {
-  color: black;
+  .h2 {
+    font-family: 'Gilroy', sans-serif;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 92%;
+    letter-spacing: -0.02em;
+    color: #0c0c0c;
+  }
 }
 
 .content {
