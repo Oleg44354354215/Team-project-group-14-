@@ -54,9 +54,12 @@ ul {
 
 .bio-photo {
 	border-radius: 50%;
-	stroke-width: 2px;
-	stroke: #fbfbfb;
+	border-color: none;
+	border: 1px solid #fbfbfb;
+	stroke-width: 1px;
 	margin-bottom: 24px;
+	width: 57px;
+	height: 56px;
 }
 
 .bio-name {
@@ -101,6 +104,10 @@ ul {
 		gap: 16px;
 	}
 
+	.reviews-container {
+		max-width: 344px;
+	}
+
 	.reviews-title {
 		font-size: 32px;
 		color: #0c0c0c;
@@ -135,6 +142,10 @@ ul {
 		align-items: stretch;
 		justify-content: center;
 		padding: 0 65px;
+	}
+
+	.reviews-container {
+		max-width: 370px;
 	}
 
 	.reviews-title {
