@@ -61,7 +61,6 @@ h6 {
     gap: 20px 4px;
     max-height: 100%;
     width: 320px;
-    margin-bottom: 20px;
 }
 
 .sale-list-item {
@@ -152,7 +151,6 @@ h6 {
     letter-spacing: -0.02em;
     text-decoration: line-through;
     color: rgba(251, 251, 251, 0.5);
-    margin: 0;
 }
 
 .sale-info-text-div {
@@ -263,11 +261,10 @@ h6 {
     .sale-list {
         height: 558px;
         flex-direction: column;
-        transform: scaleX(-1);
+        transform: scaleX(1);
         max-height: 100%;
         width: 704px;
         gap: 10px 20px;
-        margin-bottom: 40px;
     }
 
     .sale-list-item {
