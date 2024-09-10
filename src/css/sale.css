@@ -23,6 +23,8 @@ h6 {
     display: flex;
     align-items: center;
     height: 1122px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .sale-conteiner {
@@ -343,7 +345,8 @@ h6 {
     .sale-section {
         margin-bottom: 100px;
         padding: 0 65px;
-        width: 1410px;
+        /* width: 1410px; */
+        width: 1280px;
         height: 642px;
     }
 
@@ -386,6 +389,7 @@ h6 {
         border-radius: 50px;
         width: 530px;
         height: 558px;
+        
     }
 
     .sale-info-head {
