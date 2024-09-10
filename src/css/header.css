@@ -1,5 +1,5 @@
 
-.container {
+.container-head {
   max-width: 335px;
   padding: 20px 0 20px;
   position: relative;
@@ -110,7 +110,7 @@
   margin-bottom: auto;
 }
 
-.container::after{
+.container-head::after{
   content: '';
   position: absolute;
   bottom: 0;
@@ -202,7 +202,7 @@
 
 /* Styles for Tablet devices */
 @media only screen and (min-width: 768px) {
-  .container {
+  .container-head {
     max-width: 768px;
     padding: 26px 32px;
   }
@@ -216,7 +216,7 @@
 }
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1200px) {
-  .container {
+  .container-head {
     max-width: 1200px;
   }
   .nav-list {
