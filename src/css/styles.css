@@ -1,9 +1,5 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
+/* Common fonts */
+@import url('../fonts/fonts.css');
 /* Common styles */
 @import url('./about-us.css');
 @import url('./base.css');
