@@ -6,6 +6,12 @@
   max-width: 1280px;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 20px;
+}
+
+.text-2,
+.text-1 {
+  max-width: 295px;
 }
 
 .h2 {
@@ -15,6 +21,7 @@
   line-height: 100%;
   letter-spacing: -0.02em;
   color: #0c0c0c;
+  padding-top: 40px;
 }
 
 .view-catalog {
@@ -29,12 +36,10 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 129%;
-
   color: #fbfbfb;
   font-family: 'Gilroy', sans-serif;
-
   margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   width: 100%;
   max-width: 160px;
   padding-left: 38px;
@@ -47,28 +52,29 @@
   background-color: #0056b3;
 }
 
-.image-container {
-  display: flex;
-  justify-content: center;
-}
-
 .responsive-image {
   width: 100%;
   max-width: 400px;
   border-radius: 10px;
 }
-
+/* 
 @media (min-width: 375px) {
   .about-us {
     padding: 20px;
     height: 912px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    padding-left: 60px;
+    padding-right: 60px;
+    border-radius: 50px;
   }
-}
+} */
 
 @media (min-width: 768px) {
   .about-us {
     flex-direction: column;
     gap: 40px;
+    margin-bottom: 80px;
   }
   .responsive-image {
     width: 100%;
@@ -76,9 +82,9 @@
   }
   .content {
     margin-top: 80px;
-    margin-left: 60px;
-    margin-right: 60px;
+
     margin-bottom: 20px;
+    height: auto;
   }
   .h2 {
     font-family: 'Gilroy', sans-serif;
@@ -87,6 +93,10 @@
     line-height: 92%;
     letter-spacing: -0.02em;
     color: #0c0c0c;
+  }
+  .text-1,
+  .text-2 {
+    max-width: 584px;
   }
 }
 
@@ -106,6 +116,14 @@
     letter-spacing: -0.02em;
     color: #0c0c0c;
   }
+  .content {
+    width: 580px;
+    height: 532px;
+  }
+  .text-1,
+  .text-2 {
+    max-width: 460px;
+  }
 }
 
 .content {
@@ -114,6 +132,8 @@
   justify-content: flex-start;
   flex-direction: column;
   gap: 20px;
+  background: #f3f3f3;
+  border-radius: 30px;
 }
 
 .image-container {
@@ -121,6 +141,9 @@
   border-radius: 30px;
   background: rgba(12, 12, 12, 0.2), url('path_to_image');
   margin-bottom: 20px;
+
+  display: flex;
+  justify-content: center;
 }
 
 .about-us .content {
@@ -128,6 +151,8 @@
   padding: 0px 20px;
   margin-bottom: 20px;
   margin-top: 40px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
