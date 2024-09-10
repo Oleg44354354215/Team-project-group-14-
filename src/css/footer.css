@@ -14,7 +14,7 @@ ul {
 
 /* adaprivniy container */
 
-.container {
+.container-footer {
   max-width: 335px;
   padding: 40px 28px 28px 28px;
   margin-left: auto;
@@ -22,19 +22,19 @@ ul {
 }
 
 @media screen and (min-width: 768px) {
-  .container {
+  .container-footer {
     max-width: 704px;
     padding: 40px 40px 28px 40px;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  .container {
+  .container-footer {
     max-width: 1216px;
   }
 }
 
-.footer .container{
+.footer .container-footer{
   margin: 100px auto 32px auto;
   border-radius: 30px;
   background-color: #0c0c0c;

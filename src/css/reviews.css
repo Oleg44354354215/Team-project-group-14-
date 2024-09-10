@@ -1,14 +1,8 @@
-/* main {
-	display: none;
-}
-
-header {
-	display: none;
-} */
+ 
 
 p,
 a {
-	/* display: none; */
+	
 	padding: 0;
 	margin: 0;
 }
@@ -161,4 +155,4 @@ ul {
 	.container-three {
 		display: flex;
 	}
-}
+} 
