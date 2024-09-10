@@ -4,7 +4,7 @@ body {
   color: #434455;
   background-color: #fff;
 }
-<<<<<<< HEAD
+
 
 @font-face {
   font-family: 'Gilroy';
@@ -44,14 +44,6 @@ img {
 }
 
 picture {
-  flex-shrink: 0;
   max-width: 100%;
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-=======
->>>>>>> main
