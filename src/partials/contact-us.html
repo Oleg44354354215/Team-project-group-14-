@@ -1,0 +1,94 @@
+<section class="contact-watch">
+  <div class="container-ca">
+    <h2 class="us-contact">Contact Us</h2>
+    <div class="container-box">
+      <div class="text-form-label-input">
+        <p class="tex-contact">
+          Please use the form below to contact us. Enter your name, email,
+          phone, and message and we'll get back to you shortly.
+        </p>
+        <form>
+          <div class="label-input-list">
+            <label class="modal-form-labal"></label>
+            <input
+              class="input-list"
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Name"
+              required
+            />
+          </div>
+          <div class="label-input-list">
+            <label class="modal-form-labal"></label>
+            <input
+              class="input-list-email-tel"
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Email"
+              required
+              pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,})\.([A-z]{2,8})"
+              title="Please enter a valid email address"
+            />
+          </div>
+          <div class="label-input-list">
+            <label class="modal-form-labal"></label>
+            <input
+              class="input-list-email-tel"
+              type="tel"
+              id="phone"
+              name="phone"
+              placeholder="+380"
+              required
+              pattern="^\+380\d{9}$"
+              title="Please enter a valid phone number in format +380XXXXXXXXX"
+            />
+          </div>
+          <div class="label-input-list-comment">
+            <label class="modal-form-labal"></label>
+            <textarea
+              class="comment-form"
+              name="comment"
+              placeholder="Comment"
+              id="comment"
+            ></textarea>
+          </div>
+          <button class="send-button-form" type="submit">Send</button>
+        </form>
+      </div>
+      <div class="im-watch-list">
+        <picture>
+          <source
+            srcset="
+              ../img/section-contact-us/asdesk1.jpg 1x,
+              ../img/section-contact-us/asdesk2.jpg 2x
+            "
+            media="(min-width: 1280px)"
+          />
+          <source
+            srcset="
+              ../img/section-contact-us/asplan1.jpg 1x,
+              ../img/section-contact-us/asplan2.jpg 2x
+            "
+            media="(min-width: 768px)"
+          />
+          <source
+            srcset="
+              ../img/section-contact-us/asmob1.jpg 1x,
+              ../img/section-contact-us/asmob2.jpg 2x
+            "
+            media="(max-width: 767px)"
+          />
+          <img
+            class="watch-img-contact"
+            src="../img/section-contact-us/asdesk1.jpg"
+            alt="watch"
+            width="704"
+            height="556"
+          />
+        </picture>
+      </div>
+    </div>
+  </div>
+</section>
