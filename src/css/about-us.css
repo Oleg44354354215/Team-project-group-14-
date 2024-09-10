@@ -13,8 +13,10 @@
 }
 
 .view-catalog {
-  display: inline-block;
-  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
   background-color: #3350e9;
   border-radius: 16px;
   text-decoration: none;
@@ -22,14 +24,19 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 129%;
-  text-align: center;
+  /* text-align: center; */
   color: #fbfbfb;
   font-family: 'Gilroy', sans-serif;
-  width: 160px;
-  height: 48px;
-  padding: 15px 38px;
+  /* height: 48px;
+  padding: 15px 38px; */
   margin-top: 20px;
   margin-bottom: 20px;
+  width: 100%;
+  max-width: 160px;
+  padding-left: 38px;
+  padding-right: 37px;
+  padding-bottom: 15px;
+  padding-top: 15px;
 }
 
 .view-catalog:hover {
