@@ -133,15 +133,19 @@ ul {
 
 @media screen and (min-width: 1280px) {
 	.container {
-		max-width: 1280px;
+		max-width: 1150px;
 		padding: 0;
+		
 	}
 
 	.reviews-container-flex {
 		gap: 20px;
-		align-items: stretch;
+		
+		max-width: 1150px;
+		align-items: center;
 		justify-content: center;
-		padding: 0 65px;
+		padding: 0 ;
+		
 	}
 
 	.reviews-container {

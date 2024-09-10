@@ -1,7 +1,4 @@
 
-header{
-  display: none;
-}
 
 p,
 a {
@@ -261,6 +258,7 @@ ul {
     position: absolute;
     margin-left: 308px;
     margin-top: 0;
+
   }
 
   .footer-top{
