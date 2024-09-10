@@ -120,15 +120,15 @@
   margin-bottom: 20px;
 }
 
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .responsive-image {
-    content: url('watch@2x.jpg');
-  }
-}
-
 .about-us .content {
   flex: 1;
   padding: 0px 20px;
   margin-bottom: 20px;
   margin-top: 40px;
+}
+
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .responsive-image {
+    content: url(./img/section-about-us/mobile2.jpg);
+  }
 }
