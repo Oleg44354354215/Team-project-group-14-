@@ -1,5 +1,5 @@
-
-
+/* Common fonts */
+@import url('../fonts/fonts.css');
 /* Common styles */
 @import url('./about-us.css');
 @import url('./base.css');
