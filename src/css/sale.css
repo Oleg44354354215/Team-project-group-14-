@@ -260,7 +260,6 @@ h6 {
     .sale-list {
         height: 558px;
         flex-direction: column;
-        transform: scaleX(1);
         max-height: 100%;
         width: 704px;
         gap: 10px 20px;
@@ -361,7 +360,6 @@ h6 {
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        transform: scaleX(1);
         width: 580px;
     }
 
