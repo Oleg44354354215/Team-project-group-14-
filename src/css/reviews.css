@@ -23,6 +23,7 @@ ul {
 	max-width: 335px;
 	margin-left: auto;
 	margin-right: auto;
+	padding: 0;
 }
 
 .reviews-section {
@@ -41,7 +42,7 @@ ul {
 }
 
 .reviews-container {
-	width: 100%;
+	max-width: 335px;
 	background-color: #f3f3f3;
 	display: flex;
 	flex-direction: column;
@@ -75,6 +76,7 @@ ul {
 	font-size: 14px;
 	line-height: 1.29;
 	text-align: center;
+	letter-spacing: -0.02em;
 	color: rgba(12, 12, 12, 0.4);
 }
 
@@ -139,10 +141,6 @@ ul {
 		font-size: 48px;
 		line-height: 0.91;
 		color: #0c0c0c;
-	}
-
-	.container-three > .bio-text {
-		letter-spacing: -0.02em;
 	}
 
 	.container-three {
