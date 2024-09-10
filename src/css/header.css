@@ -123,15 +123,16 @@
   width: 40px;
   height: 40px;
   position: absolute;
-  top: 20px;
-  right: 20px;
-  z-index: 1000;
+  top: 15px;
+  right: 29px;
+  z-index: 998;
   border: none;
   background: transparent;
 }
 
 .menu-open-svg{
   fill:rgba(12, 12, 12);
+  stroke: rgba(12, 12, 12);
 }
 
 .menu-modal.is-open {
@@ -206,6 +207,10 @@
   .header {
     padding: 26px 32px;
   }
+  .menu-open{
+    right: 40px;
+    top: 20px;
+  }
 }
 /* Styles for Desktop devices */
 @media only screen and (min-width: 1200px) {
@@ -231,3 +236,10 @@
     display: flex;
   }
 }
+
+
+
+
+
+
+
