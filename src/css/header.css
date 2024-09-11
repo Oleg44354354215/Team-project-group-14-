@@ -159,8 +159,16 @@
   justify-content: center;
   align-items: center;
 }
-.menu-modal{
 
+.menu-modal{
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+.menu-modal.is-open {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
 }
 .menu-close {
   border: none;
@@ -213,7 +221,9 @@
   .menu-modal.is-open {
     width:330px;
   }
+
   .menu-open{
+    display: block;
     right: 40px;
     top: 20px;
   }
