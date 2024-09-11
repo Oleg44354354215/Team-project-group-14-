@@ -122,7 +122,7 @@ height: 48px;
     line-height: 0.91;
   }
   .section-choose-story {
-   
+   padding-top: 0;
     margin-bottom: 80px;
   }
   .image-choose-story {
@@ -165,7 +165,7 @@ height: 48px;
     max-width: 690px;
   }
   .section-choose-story {
-  
+    padding-top: 0;
     margin-bottom: 100px;
   }
   .btn {
