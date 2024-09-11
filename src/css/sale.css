@@ -28,8 +28,10 @@ h6 {
 }
 
 .sale-conteiner {
+    padding-left: 20px;
+    padding-right: 20px;
     width: 320px;
-    height: 1122px;
+    /* height: 1122px; */
     margin: 0 auto;
     font-family: "Gilroy", sans-serif;
 }
