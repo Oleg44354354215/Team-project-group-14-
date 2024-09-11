@@ -115,6 +115,7 @@ height: 48px;
   .container-choose-story {
     min-width: 704px;
     padding-left: 0;
+    padding-right: 0;
   }
   .text-choose-story {
     max-width: 576px;
@@ -152,6 +153,8 @@ height: 48px;
   .container-choose-story {
     max-width: 1150px;
     padding-left: 0;
+    padding-right: 0;
+
     
   }
   .image-choose-story {

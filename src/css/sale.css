@@ -200,6 +200,8 @@ h6 {
     }
 
     .sale-conteiner {
+        padding-left: 0;
+        padding-right: 0;
         width: 335px;
         height: 1122px;
     }
@@ -245,6 +247,9 @@ h6 {
         width: 704px;
         height: 1200px;
         margin: 0 auto;
+        padding-left: 0;
+    padding-right: 0;
+    padding: 0;
     }
 
     .sale-title {
@@ -349,6 +354,9 @@ h6 {
     .sale-conteiner {
         width: 1280px;
         height: 642px;
+        padding-left: 0;
+        padding-right: 0;
+        
     }
 
     .sale-div {

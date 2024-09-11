@@ -161,7 +161,10 @@ img {
         gap: 40px;
         width: 768px;
     } */
-
+    .container-ca{
+        padding-left: 0;
+        padding-right: 0;
+    }
     .us-contact{
         font-weight: 600;
         font-size: 48px;
@@ -232,8 +235,13 @@ img {
         font-size: 48px;
         line-height: 92%;
     }
+    .container-ca{
+        padding-left: 0;
+        padding-right: 0;
+    }
     .contact-watch{
-        
+        padding-left: 0;
+        padding-right: 0;
             padding-bottom: 0;
        
         margin-bottom: 100px;
