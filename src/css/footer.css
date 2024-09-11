@@ -289,9 +289,8 @@ ul {
     height: auto;
     border-radius: 50px;
     object-fit: cover;
-  }
-}
-
+  }}
+/* //////////////////////////////////////////////////////////////////// */
 /* adaprivniy container */
 
 .container-footer {
@@ -315,7 +314,7 @@ ul {
 }
 
 .footer .container-footer{
-  margin: 100px auto 32px auto;
+  margin: 0px auto 32px auto;
   border-radius: 30px;
   background-color: #0c0c0c;
 }
@@ -352,7 +351,9 @@ ul {
   margin-top: 20px;
   margin-bottom: 34px;
 }
-
+.footer-social .social-icon{
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .footer-social .social-icon{
   fill: #FBFBFB;
   margin: auto;
@@ -368,6 +369,7 @@ ul {
   display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .footer-social .social-link{

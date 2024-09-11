@@ -17,6 +17,8 @@ img {
 
 button {
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+  color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .title {
   opacity: 0;
@@ -27,7 +29,7 @@ button {
 .section-choose-story {
   width: 100%;
   padding: 0;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 }
 
 /* mobile */
@@ -79,12 +81,16 @@ button {
 }
 
 .btn {
-  display: block;
-
+  display: inline-block;
+  padding-top:15px ;
+  padding-bottom: 15px;
   min-width: 160px;
+  text-align: center;
   align-items: center;
   justify-content: center;
-  height: 48px;
+ 
+  width: 160px;
+height: 48px;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.28;
@@ -110,6 +116,10 @@ button {
     max-width: 576px;
     font-size: 48px;
     line-height: 0.91;
+  }
+  .section-choose-story {
+   
+    margin-bottom: 80px;
   }
   .image-choose-story {
     background-image: linear-gradient(
@@ -137,6 +147,8 @@ button {
 @media screen and (min-width: 1150px) {
   .container-choose-story {
     max-width: 1150px;
+  
+    
   }
   .image-choose-story {
     display: flex;
@@ -147,6 +159,10 @@ button {
     font-size: 48px;
     line-height: 0.91;
     max-width: 690px;
+  }
+  .section-choose-story {
+   
+    margin-bottom: 100px;
   }
   .btn {
     margin-left: auto;

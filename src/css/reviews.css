@@ -97,7 +97,9 @@ ul {
 		align-items: center;
 		gap: 16px;
 	}
-
+	.reviews-section {
+		margin-bottom: 80px;
+	}
 	.reviews-container {
 		max-width: 344px;
 	}
@@ -131,7 +133,9 @@ ul {
 		padding: 0;
 		
 	}
-
+	.reviews-section {
+		margin-bottom: 100px;
+	}
 	.reviews-container-flex {
 		gap: 20px;
 		
