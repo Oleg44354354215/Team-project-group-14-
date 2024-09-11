@@ -1,0 +1,158 @@
+ 
+
+p,
+a {
+	
+	padding: 0;
+	margin: 0;
+}
+
+ul {
+	/* list-style-type: none; */
+	padding: 0;
+	margin: 0;
+}
+
+.container {
+	max-width: 335px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0;
+}
+
+.reviews-section {
+	margin-bottom: 60px;
+}
+
+.reviews-title {
+	text-align: left;
+	font-family: "Gilroy", sans-serif;
+	font-weight: 600;
+	font-size: 32px;
+	line-height: 1;
+	letter-spacing: -0.02em;
+	color: #0c0c0c;
+	margin-bottom: 24px;
+}
+
+.reviews-container {
+	max-width: 335px;
+	background-color: #f3f3f3;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	border-radius: 30px;
+	padding: 32px 36px;
+}
+
+.bio-photo {
+	border-radius: 50%;
+	border-color: none;
+	border: 1px solid #fbfbfb;
+	stroke-width: 1px;
+	margin-bottom: 24px;
+	width: 57px;
+	height: 56px;
+}
+
+.bio-name {
+	font-family: "Gilroy", sans-serif;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 1.25;
+	letter-spacing: -0.02em;
+	text-align: center;
+	color: #0c0c0c;
+	margin-bottom: 8px;
+}
+
+.bio-text {
+	font-family: "Gilroy", sans-serif;
+	font-weight: 500;
+	font-size: 14px;
+	line-height: 1.29;
+	text-align: center;
+	letter-spacing: -0.02em;
+	color: rgba(12, 12, 12, 0.4);
+}
+
+.container-three {
+	display: none;
+}
+
+.container-two {
+	display: none;
+}
+
+@media screen and (min-width: 768px) {
+	.container {
+		max-width: 768px;
+		padding: 0 32px;
+	}
+
+	.reviews-container-flex {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		gap: 16px;
+	}
+
+	.reviews-container {
+		max-width: 344px;
+	}
+
+	.reviews-title {
+		font-size: 32px;
+		color: #0c0c0c;
+		margin-bottom: 40px;
+	}
+
+	.bio-name {
+		font-size: 18px;
+		line-height: 1.1;
+	}
+
+	.bio-text {
+		font-size: 16px;
+		line-height: 1.25;
+		text-align: center;
+		color: rgba(12, 12, 12, 0.4);
+	}
+
+	.container-two {
+		display: flex;
+	}
+}
+
+@media screen and (min-width: 1280px) {
+	.container {
+		max-width: 1150px;
+		padding: 0;
+		
+	}
+
+	.reviews-container-flex {
+		gap: 20px;
+		
+		max-width: 1150px;
+		align-items: center;
+		justify-content: center;
+		padding: 0 ;
+		
+	}
+
+	.reviews-container {
+		max-width: 370px;
+	}
+
+	.reviews-title {
+		font-size: 48px;
+		line-height: 0.91;
+		color: #0c0c0c;
+	}
+
+	.container-three {
+		display: flex;
+	}
+} 
