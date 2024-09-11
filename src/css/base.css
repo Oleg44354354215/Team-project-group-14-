@@ -4,7 +4,9 @@ body {
   color: #434455;
   background-color: #fff;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 
 @font-face {
   font-family: 'Gilroy';
