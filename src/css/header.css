@@ -164,6 +164,8 @@
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  width: 0;
+    height: 0;
 }
 .menu-modal.is-open {
   visibility: visible;
